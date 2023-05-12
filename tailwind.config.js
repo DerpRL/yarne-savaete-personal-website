@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        reveal: {
+          '0%': { transform: 'translate(0,100%)', opacity: 0 },
+          '100%': { transform: 'translate(0,0)', opacity: 1 },
+        },
+      },
+      animation: {
+        'text-reveal': 'reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0s',
+        'text-reveal-delay': 'reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) .5s !important',
+      },
       colors: {
         'dark-background': '#34353A',
         'orange-accent': '#dfa72e',
