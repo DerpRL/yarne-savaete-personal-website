@@ -1,0 +1,1 @@
+export const GOOGLE_ANALYTIC_TAG_ID = 'G-9D5ZHN9FVT'

@@ -1,9 +1,13 @@
 import Image from "next/image";
-import {StarIcon} from "@heroicons/react/24/solid";
+import { StarIcon } from "@heroicons/react/24/solid";
+import { FC } from "react";
+import { SkillData } from "@/utils/types";
+import Link from "next/link";
 
-export const MySkillComponent = ({ skillName, imageName, skillRating }) => {
+
+export const MySkillComponent: FC<SkillData> = ({ skillName, imageName, skillRating, skillInfoUrl, lastElement }) => {
     return (
-        <div className={'w-full min-[1000px]:min-w-[150px] h-[150px] flex flex-col items-center justify-center bg-gray-500/10 my-2 mx-0 min-[1000px]:mx-2 motion-safe:hover:scale-105 hover:bg-orange-accent/40 transition-all duration-300 ease-in-out rounded-md'}>
+        <Link href={skillInfoUrl} target={'_blank'} className={`w-full min-[1000px]:min-w-[150px] h-[150px] flex flex-col items-center justify-center bg-gray-500/10 my-2 mx-0 ${ !lastElement ? `min-[1000px]:mr-4` : ``} motion-safe:hover:scale-105 hover:bg-orange-accent/30 transition-all duration-300 ease-in-out rounded-md`}>
             <div className={`flex flex-col items-center w-full`}>
                 <Image src={`/assets/images/skills/${imageName}`} alt={`Icon for ${skillName}`} width={40} height={40} className={'rounded-md mb-4'}/>
                 <p className={'font-bold text-base text-center pb-1'}>{ skillName }</p>
@@ -15,6 +19,6 @@ export const MySkillComponent = ({ skillName, imageName, skillRating }) => {
                     ))}
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }

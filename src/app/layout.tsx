@@ -2,7 +2,8 @@ import '@/styles/globals.css'
 import React from "react";
 import { leagueSpartan } from "@/utils/fonts";
 import { Metadata } from "next";
-import { DefaultNavigation } from "@/components/navigation/DefaultNavigation";
+import { DefaultNavigation } from "@/components/DefaultNavigation";
+import { DefaultFooter } from "@/components/DefaultFooter";
 
 
 export const metadata: Metadata = {
@@ -30,17 +31,19 @@ export const metadata: Metadata = {
     },
     appleWebApp: { capable: true, title: "Yarne Savaete | Software Engineer", statusBarStyle: "default" },
     formatDetection: { telephone: false },
-    twitter: { card: "summary_large_image", site: "https://yarnesavaete.com", creator: "@yarne_savaete" }
+    twitter: { card: "summary_large_image", site: "https://yarnesavaete.com", creator: "@yarne_savaete" },
+    icons: { icon: "/assets/images/web-icons/Web_Icon.png", apple: "/assets/images/web-icons/Web_Icon.png" }
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-      <html lang='en'>
-          <body className={`w-11/12 sm:w-10-12 md:w-9/12 mx-auto ${leagueSpartan.className}`}>
+      <html lang='en' className={'scroll-smooth'}>
+          <body className={`${leagueSpartan.className}`}>
               <DefaultNavigation/>
-              <main>
+              <main className={'w-11/12 sm:w-10-12 md:w-9/12 mx-auto '}>
                   { children }
               </main>
+              <DefaultFooter/>
           </body>
       </html>
   )

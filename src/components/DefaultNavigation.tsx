@@ -9,7 +9,7 @@ import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 export const DefaultNavigation = () => {
     return (
         <Popover>
-            <nav className={'flex flex-row items-center justify-between my-6 sm:mb-20 mb-8'}>
+            <nav className={'flex flex-row items-center justify-between my-6 sm:mb-20 mb-8 w-11/12 sm:w-10-12 md:w-9/12 mx-auto '}>
                 <Link href={'/'} className={'font-black text-2xl md:text-3xl text-orange-accent flex flex-row items-center'}>
                     YS <span className={'text-gray-400 font-bold pl-1'}>.</span>
                 </Link>
@@ -37,7 +37,7 @@ export const DefaultNavigation = () => {
                 leaveTo="opacity-0 -translate-x-full"
                 enterFrom="opacity-0 -translate-x-full"
             >
-                <Popover.Panel focus className="absolute inset-x-0 h-screen top-0 origin-top-right transform transition min-[1150px]:hidden overflow-y-auto z-50 bg-white">
+                <Popover.Panel focus className="fixed inset-x-0 h-screen top-0 origin-top-right transform transition min-[1150px]:hidden overflow-y-auto z-50 bg-white">
                     {({ close }) => (
                         <>
                             <div className="my-6 pb-2 w-11/12 sm:w-10-12 md:w-9/12 mx-auto">
