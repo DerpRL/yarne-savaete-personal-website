@@ -4,9 +4,12 @@ import Link from "next/link";
 import { Popover, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { usePathname } from "next/navigation";
 
 
 export const DefaultNavigation = () => {
+    const pathname = usePathname();
+
     return (
         <Popover>
             <nav className={'flex flex-row items-center justify-between my-6 sm:mb-20 mb-8 w-11/12 sm:w-10-12 md:w-9/12 mx-auto '}>
@@ -14,9 +17,9 @@ export const DefaultNavigation = () => {
                     YS <span className={'text-gray-400 font-bold pl-1'}>.</span>
                 </Link>
                 <div className={'flex flex-col sm:flex-row items-center justify-between w-fit sm:w-4/12 hidden min-[1150px]:flex'}>
-                    <Link href={'/about'} className={'px-4 py-2 mr-1 rounded-md hover:bg-gray-100'}>About</Link>
-                    <Link href={'/projects'} className={'px-4 py-2 mr-1 rounded-md hover:bg-gray-100'}>Projects</Link>
-                    <Link href={'/blogs'} className={'px-4 py-2 rounded-md hover:bg-gray-100'}>Blog</Link>
+                    <Link href={'/about'} className={`px-4 py-2 mr-1 rounded-md hover:bg-gray-100 ${pathname.startsWith('/about') ? `text-orange-accent` : `text-black`}`}>About</Link>
+                    <Link href={'/projects'} className={`px-4 py-2 mr-1 rounded-md hover:bg-gray-100 ${pathname.startsWith('/projects') ? `text-orange-accent` : `text-black`}`}>Projects</Link>
+                    <Link href={'/blogs'} className={`px-4 py-2 rounded-md hover:bg-gray-100 ${pathname.startsWith('/blogs') ? `text-orange-accent` : `text-black`}`}>Blog</Link>
                 </div>
                 <Link href={'mailto:contact@yarnesavaete.com'} className={'hidden min-[1150px]:flex border border-2 rounded-md border-purple-accent px-5 py-2 font-bold motion-safe:hover:scale-110 hover:bg-purple-accent hover:text-white transition-all duration-300 ease-in-out'}>
                     Contact
@@ -50,23 +53,23 @@ export const DefaultNavigation = () => {
                                 </div>
                                 <div className={'flex flex-col items-start mt-10 mb-4'}>
                                     <p className={'text-gray-400 font-bold text-sm mb-4'}>DISCOVER</p>
-                                    <Link href={'/'} onClick={() => { close() }} className={'font-bold text-lg text-orange-accent mb-2'}>
+                                    <Link href={'/'} onClick={() => { close() }} className={`text-lg mb-2 ${pathname.startsWith('/') && pathname.length === 1 ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Home
                                     </Link>
-                                    <Link href={'/about'} onClick={() => { close() }} className={'font-bold text-lg text-orange-accent mb-2'}>
+                                    <Link href={'/about'} onClick={() => { close() }} className={`font-bold text-lg mb-2 ${pathname.startsWith('/about') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         About
                                     </Link>
-                                    <Link href={'/about'} onClick={() => { close() }} className={'font-bold text-lg text-orange-accent mb-2'}>
+                                    <Link href={'/projects'} onClick={() => { close() }} className={`font-bold text-lg mb-2 ${pathname.startsWith('/projects') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Projects
                                     </Link>
-                                    <Link href={'/about'} onClick={() => { close() }} className={'font-bold text-lg text-orange-accent mb-10'}>
+                                    <Link href={'/blogs'} onClick={() => { close() }} className={`font-bold text-lg mb-10 ${pathname.startsWith('/blogs') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Blog
                                     </Link>
                                     <p className={'text-gray-400 font-bold text-sm mb-4'}>LEGAL</p>
-                                    <Link href={'/terms-of-service'} onClick={() => { close() }} className={'font-bold text-lg text-orange-accent mb-4'}>
+                                    <Link href={'/terms-of-service'} onClick={() => { close() }} className={`font-bold text-lg mb-2 ${pathname.startsWith('/terms-of-service') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Terms of Service
                                     </Link>
-                                    <Link href={'/privacy-policy'} onClick={() => { close() }} className={'font-bold text-lg text-orange-accent mb-4'}>
+                                    <Link href={'/privacy-policy'} onClick={() => { close() }} className={`font-bold text-lg mb-8 ${pathname.startsWith('/privacy-policy') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Privacy Policy
                                     </Link>
                                     <Link href={'mailto:contact@yarnesavaete.com'} className={'w-full text-center rounded-md bg-purple-accent px-5 py-2 font-bold text-lg text-white'}>

@@ -9,7 +9,7 @@ export const EyeOpener = () => {
         <div className={'flex flex-col min-[1350px]:flex-row items-center justify-between w-full my-8 md:my-24'}>
             <div className={'mr-0 min-[1350px]:mr-6 motion-safe:animate-text-reveal'}>
                 <div className={'motion-safe:animate-text-reveal flex flex-col'}>
-                    <h1 className={'text-gray-400 text-3xl font-medium text-center min-[1350px]:text-left min-[1350px]:items-start flex flex-col min-[1520px]:flex-row min-[1520px]:items-end items-center'}>I&apos;M <span className={'text-orange-accent text-4xl sm:text-5xl font-bold relative ml-2 min-[1350px]:ml-0 min-[1520px]:ml-2'}>Yarne Savaete</span></h1>
+                    <h1 className={'text-gray-400 text-3xl font-medium text-center min-[1350px]:text-left min-[1350px]:items-start flex flex-col min-[1600px]:flex-row min-[1600px]:items-end items-center'}>I&apos;M <span className={'text-orange-accent text-4xl sm:text-5xl font-bold relative ml-2 min-[1350px]:ml-0 min-[1600px]:ml-2'}>Yarne Savaete</span></h1>
                     <p className={'text-gray-400 font-bold text-lg sm:text-xl text-center min-[1350px]:text-left'}>Software Engineer & Front-end Developer</p>
                 </div>
                 <div className={'flex flex-row justify-evenly min-[1350px]:justify-start items-center mt-4 motion-safe:animate-text-reveal'}>

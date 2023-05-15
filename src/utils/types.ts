@@ -12,8 +12,9 @@ export type ProjectMetaData = {
     imageUrl: string,
     technologies?: string[]
     socialLinks?: ProjectSocialMetaData[],
-    projectUrlLink?: string,
-    achievements?: string[]
+    projectUrlLink: string,
+    achievements?: string[],
+    reverseOrder: boolean
 }
 
 export type ProjectSocialMetaData = {
