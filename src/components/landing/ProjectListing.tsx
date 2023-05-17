@@ -16,13 +16,13 @@ export const ProjectListing = () => {
                         { name: 'Top.gg', link: 'https://top.gg/bot/904847963413676102', iconImageUrl: 'Top.gg_Icon.png' },
                         { name: 'Discordlist.gg', link: 'https://discordlist.gg/bot/904847963413676102', iconImageUrl: 'Discordlist_Icon.png' }
                     ]}
-                    achievements={[ '150k+ Users' ]}
+                    achievements={[ '150.000+ Users' ]}
                     projectUrlLink={'https://servermanager.me'}
                     reverseOrder={false}
                 />
                 <ProjectElement
                     name={'Personal Website'}
-                    description={'Server Manager is a multi-purpose Discord bot that helps improve management and security in servers. Our user-friendly dashboard makes managing settings a breeze. Experience the ultimate control over your Discord server\'s safety and moderation!'}
+                    description={'A web portfolio demonstrating my projects and skills. You can find my social links on this and review what I have in store for you.'}
                     imageUrl={'Yarne_Savaete_Personal.png'}
                     technologies={['JavaScript', 'TypeScript', 'Node.js', 'Google Analytics', 'Next.js', 'React', 'Tailwind CSS', 'HTML', 'CSS', 'Digital Ocean', 'Git', 'Headless UI']}
                     socialLinks={[

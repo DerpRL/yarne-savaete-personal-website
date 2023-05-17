@@ -4,14 +4,14 @@ import { GoogleAnalyticsLoader } from "@/components/GoogleAnalyticsLoader";
 
 
 export const metadata: Metadata = {
-    title: 'About | Yarne Savaete',
+    title: 'Code Challenge With Hack The Future | Blogs',
 }
 
-export default async function AboutPage() {
+export default async function CodeChallengeWithHackTheFutureBlogPost() {
     return (
         <>
             <GoogleAnalyticsLoader/>
-            <h1>About</h1>
+            <h1>Code-Challenge-With-Hack-The-Future</h1>
         </>
     )
 }

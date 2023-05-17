@@ -8,8 +8,8 @@ import { DefaultFooter } from "@/components/DefaultFooter";
 
 export const metadata: Metadata = {
     metadataBase: null,
-    title: { default: '', template: "%s | Yarne Savaete" },
-    description: `Meet Yarne Savaete, an aspiring front-end developer with a background in software engineering. This portfolio showcases Yarne Savaete's skills in HTML, CSS, and JavaScript through various web development projects, demonstrating their ability to create visually appealing and responsive user interfaces. Yarne Savaete's background in software engineering provides a strong foundation in programming and problem-solving skills. Contact Yarne Savaete today to collaborate on your next web development project.`,
+    title: { default: '', template: "%s | Yarne Savaete | Software Engineer" },
+    description: `Meet Yarne Savaete, front-end developer with a software engineering background. Proficient in HTML, CSS, and JavaScript. Impressive portfolio showcasing visually appealing and responsive UI designs. Strong programming and problem-solving skills. Collaborate on your web development project today.`,
     applicationName: 'Yarne Savaete | Software Engineer',
     authors: { name: 'Yarne Savaete' },
     generator: 'Next.js',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         type: "website",
         url: "https://yarnesavaete.com",
         title: "Yarne Savaete | Software Engineer",
-        description: `Meet Yarne Savaete, an aspiring front-end developer with a background in software engineering. This portfolio showcases Yarne Savaete's skills in HTML, CSS, and JavaScript through various web development projects, demonstrating their ability to create visually appealing and responsive user interfaces. Yarne Savaete's background in software engineering provides a strong foundation in programming and problem-solving skills. Contact Yarne Savaete today to collaborate on your next web development project.`,
+        description: `Meet Yarne Savaete, front-end developer with a software engineering background. Proficient in HTML, CSS, and JavaScript. Impressive portfolio showcasing visually appealing and responsive UI designs. Strong programming and problem-solving skills. Collaborate on your web development project today.`,
         siteName: "Yarne Savaete | Software Engineer",
     },
     appleWebApp: { capable: true, title: "Yarne Savaete | Software Engineer", statusBarStyle: "default" },

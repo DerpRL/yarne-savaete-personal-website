@@ -5,7 +5,7 @@ import { GoogleAnalyticsLoader } from "@/components/GoogleAnalyticsLoader";
 
 
 export const metadata: Metadata = {
-    title: 'Privacy Policy | Yarne Savaete',
+    title: 'Privacy Policy',
 }
 
 export default async function PrivacyPolicyPage() {

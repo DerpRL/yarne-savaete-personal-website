@@ -5,7 +5,7 @@ import { GoogleAnalyticsLoader } from "@/components/GoogleAnalyticsLoader";
 
 
 export const metadata: Metadata = {
-    title: 'Terms of Service | Yarne Savaete',
+    title: 'Terms of Service',
 }
 
 export default async function TermsOfServicePage() {

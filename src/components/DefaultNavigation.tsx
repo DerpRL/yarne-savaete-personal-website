@@ -17,7 +17,7 @@ export const DefaultNavigation = () => {
                     YS <span className={'text-gray-400 font-bold pl-1'}>.</span>
                 </Link>
                 <div className={'flex flex-col sm:flex-row items-center justify-between w-fit sm:w-4/12 hidden min-[1150px]:flex'}>
-                    <Link href={'/about'} className={`px-4 py-2 mr-1 rounded-md hover:bg-gray-100 ${pathname.startsWith('/about') ? `text-orange-accent` : `text-black`}`}>About</Link>
+                    <Link href={'/resume'} className={`px-4 py-2 mr-1 rounded-md hover:bg-gray-100 ${pathname.startsWith('/resume') ? `text-orange-accent` : `text-black`}`}>Resume</Link>
                     <Link href={'/projects'} className={`px-4 py-2 mr-1 rounded-md hover:bg-gray-100 ${pathname.startsWith('/projects') ? `text-orange-accent` : `text-black`}`}>Projects</Link>
                     <Link href={'/blogs'} className={`px-4 py-2 rounded-md hover:bg-gray-100 ${pathname.startsWith('/blogs') ? `text-orange-accent` : `text-black`}`}>Blog</Link>
                 </div>
@@ -56,8 +56,8 @@ export const DefaultNavigation = () => {
                                     <Link href={'/'} onClick={() => { close() }} className={`text-lg mb-2 ${pathname.startsWith('/') && pathname.length === 1 ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Home
                                     </Link>
-                                    <Link href={'/about'} onClick={() => { close() }} className={`font-bold text-lg mb-2 ${pathname.startsWith('/about') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
-                                        About
+                                    <Link href={'/resume'} onClick={() => { close() }} className={`font-bold text-lg mb-2 ${pathname.startsWith('/resume') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
+                                        Resume
                                     </Link>
                                     <Link href={'/projects'} onClick={() => { close() }} className={`font-bold text-lg mb-2 ${pathname.startsWith('/projects') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Projects

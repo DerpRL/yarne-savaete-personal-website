@@ -13,7 +13,7 @@ export const ProjectElement: FC<ProjectMetaData> = ({ name, description, imageUr
                     <Image src={`/assets/images/projects/${imageUrl}`} alt={`Project preview image for ${name}`} width={1000} height={561} className={'rounded-md !max-w-full drop-shadow-2xl hover:scale-[1.02] transition-all duration-300 ease-in-out'}/>
                 </div>
                 <div className={'h-max w-full flex flex-col items-start'}>
-                    <div className={'flex flex-col min-[1300px]:flex-row items-start min-[1300px]:items-center mb-4'}>
+                    <div className={'flex flex-col md:flex-row items-start md:items-center mb-4'}>
                         <h3 className={'text-2xl min-[1600px]:text-3xl font-bold mr-3'}>{ name }</h3>
                         { achievements && (
                             <>

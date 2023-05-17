@@ -4,14 +4,14 @@ import { GoogleAnalyticsLoader } from "@/components/GoogleAnalyticsLoader";
 
 
 export const metadata: Metadata = {
-    title: 'Blogs',
+    title: 'HoWest Goes USA | Blogs',
 }
 
-export default async function BlogsPage() {
+export default async function HoWestGoesUsaBlogPost() {
     return (
         <>
             <GoogleAnalyticsLoader/>
-            <h1>Blogs</h1>
+            <h1>HoWest Goes USA</h1>
         </>
     )
 }

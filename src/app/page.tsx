@@ -1,15 +1,17 @@
 import { Metadata } from "next";
 import React from "react";
+import Script from "next/script";
 import { EyeOpener } from "@/components/landing/EyeOpener";
 import { SkillsListing } from "@/components/landing/SkillsListing";
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
-import Script from "next/script";
 import { ProjectListing } from "@/components/landing/ProjectListing";
 import { GoogleAnalyticsLoader } from "@/components/GoogleAnalyticsLoader";
+import { BlogListing } from "@/components/landing/BlogListing";
+import { ContactSection } from "@/components/landing/ContactSection";
 
 
 export const metadata: Metadata = {
-    title: 'Home | Yarne Savaete',
+    title: 'Home | Yarne Savaete | Software Engineer',
 }
 
 export default async function LandingPage() {
@@ -25,6 +27,8 @@ export default async function LandingPage() {
             </div>
             <SkillsListing/>
             <ProjectListing/>
+            <BlogListing/>
+            <ContactSection/>
         </>
     )
 }

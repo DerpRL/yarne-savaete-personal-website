@@ -4,7 +4,7 @@ import { GoogleAnalyticsLoader } from "@/components/GoogleAnalyticsLoader";
 
 
 export const metadata: Metadata = {
-    title: 'Projects | Yarne Savaete',
+    title: 'Projects',
 }
 
 export default async function ProjectsPage() {
