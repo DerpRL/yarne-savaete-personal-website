@@ -16,14 +16,15 @@ export const DefaultNavigation = () => {
                 <Link href={'/'} className={'font-black text-2xl md:text-3xl text-orange-accent flex flex-row items-center'}>
                     YS <span className={'text-gray-400 font-bold pl-1'}>.</span>
                 </Link>
-                <div className={'flex flex-col sm:flex-row items-center justify-between w-fit sm:w-4/12 hidden min-[1150px]:flex'}>
-                    <Link href={'/resume'} className={`px-4 py-2 mr-1 rounded-md hover:bg-gray-100 ${pathname.startsWith('/resume') ? `text-orange-accent` : `text-black`}`}>Resume</Link>
-                    <Link href={'/projects'} className={`px-4 py-2 mr-1 rounded-md hover:bg-gray-100 ${pathname.startsWith('/projects') ? `text-orange-accent` : `text-black`}`}>Projects</Link>
-                    <Link href={'/blogs'} className={`px-4 py-2 rounded-md hover:bg-gray-100 ${pathname.startsWith('/blogs') ? `text-orange-accent` : `text-black`}`}>Blog</Link>
+                <div className={'flex flex-row items-center'}>
+                    <div className={'flex flex-col sm:flex-row items-center justify-between w-fit hidden min-[1150px]:flex mr-16'}>
+                        <Link href={'/resume'} className={`px-4 py-2 mr-4 rounded-md hover:bg-gray-100 ${pathname.startsWith('/resume') ? `text-orange-accent` : `text-black`}`}>Resume</Link>
+                        <Link href={'/blogs'} className={`px-4 py-2 rounded-md hover:bg-gray-100 ${pathname.startsWith('/blogs') ? `text-orange-accent` : `text-black`}`}>Blog</Link>
+                    </div>
+                    <Link href={'mailto:contact@yarnesavaete.com'} prefetch={false} className={'hidden min-[1150px]:flex border border-2 rounded-md border-purple-accent px-5 py-2 font-bold motion-safe:hover:scale-110 hover:bg-purple-accent hover:text-white transition-all duration-300 ease-in-out'}>
+                        Contact
+                    </Link>
                 </div>
-                <Link href={'mailto:contact@yarnesavaete.com'} prefetch={false} className={'hidden min-[1150px]:flex border border-2 rounded-md border-purple-accent px-5 py-2 font-bold motion-safe:hover:scale-110 hover:bg-purple-accent hover:text-white transition-all duration-300 ease-in-out'}>
-                    Contact
-                </Link>
                 <div className="min-[1150px]:hidden">
                     <Popover.Button className="p-2 rounded-md outline-none border-none focus:ring-2 focus:ring-purple-accent text-black hover:bg-gray-500/10">
                         <span className="sr-only">Open menu</span>
@@ -58,9 +59,6 @@ export const DefaultNavigation = () => {
                                     </Link>
                                     <Link href={'/resume'} onClick={() => { close() }} className={`font-bold text-lg mb-2 ${pathname.startsWith('/resume') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Resume
-                                    </Link>
-                                    <Link href={'/projects'} onClick={() => { close() }} className={`font-bold text-lg mb-2 ${pathname.startsWith('/projects') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
-                                        Projects
                                     </Link>
                                     <Link href={'/blogs'} onClick={() => { close() }} className={`font-bold text-lg mb-10 ${pathname.startsWith('/blogs') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Blog

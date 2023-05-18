@@ -22,7 +22,7 @@ export type BlogMetaData = {
     description: string,
     blogPostData: string,
     imageUrl: string,
-    detailedBlogUrl: string,
+    detailedBlogUrl?: string,
     reverseOrder: boolean
 }
 

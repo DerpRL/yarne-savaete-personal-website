@@ -19,7 +19,6 @@ export const BlogListing = () => {
                     description={'Together with Simon Plyson, we participated in the code challenges of Hack The Future. We both signed up for the Zinderlabs challenges. The code challenge was that we had to find the murderer and the murder weapon with certain factors to take in.'}
                     blogPostData={'2 December, 2021'}
                     imageUrl={'Hack_The_Future_Thumb.png'}
-                    detailedBlogUrl={'/blogs/Code-Challenge-With-Hack-The-Future'}
                     reverseOrder={true}
                 />
             </div>
