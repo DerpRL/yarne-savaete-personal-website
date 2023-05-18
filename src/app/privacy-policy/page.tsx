@@ -55,7 +55,7 @@ export default async function PrivacyPolicyPage() {
             </div>
             <div className={'flex flex-col mb-6'}>
                 <h2 className={'font-bold text-2xl mb-2'}>Contact Us</h2>
-                <p>If you have any questions or concerns about this Privacy Policy or our practices, please <Link className={'text-orange-accent font-bold'} href={'mailto:contact@yarnesavaete.com'}>contact us</Link>.</p>
+                <p>If you have any questions or concerns about this Privacy Policy or our practices, please <Link className={'text-orange-accent font-bold'} prefetch={false} href={'mailto:contact@yarnesavaete.com'}>contact us</Link>.</p>
             </div>
         </>
     )

@@ -26,8 +26,12 @@ export default async function TermsOfServicePage() {
                 <p>Our website uses Cloudflare to improve performance and security. Cloudflare may collect certain information about visitors to our website, including IP address, device type, and browser type. This information may be used to analyze and improve the performance and security of our website. By using our website, you consent to the processing of data about you by Cloudflare in the manner and for the purposes set out above.</p>
             </div>
             <div className={'flex flex-col mb-6'}>
+                <h2 className={'font-bold text-2xl mb-2'}>Changes to this Terms of Service</h2>
+                <p>We may update this Terms of Services from time to time. We will post any changes on our website with the updated Terms of Service effective date.</p>
+            </div>
+            <div className={'flex flex-col mb-6'}>
                 <h2 className={'font-bold text-2xl mb-2'}>Contact Us</h2>
-                <p>If you have any questions or suggestions about our Terms, please <Link className={'text-orange-accent font-bold'} href={'mailto:contact@yarnesavaete.com'}>contact us</Link>.</p>
+                <p>If you have any questions or suggestions about our Terms, please <Link className={'text-orange-accent font-bold'} prefetch={false} href={'mailto:contact@yarnesavaete.com'}>contact us</Link>.</p>
             </div>
         </>
     )

@@ -26,13 +26,13 @@ export const PersonalInformationSection = () => {
                         <div className={'p-2 bg-orange-accent rounded-full w-fit'}>
                             <PhoneIcon className={'text-white w-5 h-5'}/>
                         </div>
-                        <Link href={'tel:+32471606577'} className={'pl-2'}>+32 471 60 65 77</Link>
+                        <Link href={'tel:+32471606577'} prefetch={false} className={'pl-2'}>+32 471 60 65 77</Link>
                     </div>
                     <div className={'flex flex-row items-center mb-2'}>
                         <div className={'p-2 bg-orange-accent rounded-full w-fit'}>
                             <EnvelopeIcon className={'text-white w-5 h-5'}/>
                         </div>
-                        <Link href={'mailto:contact@yarnesavaete.com'} className={'pl-2'}>contact@yarnesavaete.com</Link>
+                        <Link href={'mailto:contact@yarnesavaete.com'} prefetch={false} className={'pl-2'}>contact@yarnesavaete.com</Link>
                     </div>
                 </div>
                 <div className={'flex flex-col items-start'}>
@@ -40,7 +40,7 @@ export const PersonalInformationSection = () => {
                         <div className={'p-2 bg-orange-accent rounded-full w-fit'}>
                             <Image src={'/assets/images/web-icons/LinkedIn_White_Icon.png'} alt={'White LinkedIn Website Icon'} width={20} height={20} />
                         </div>
-                        <Link href={'https://www.linkedin.com/in/yarne-savaete'} className={'pl-2'}>yarne-savaete</Link>
+                        <Link href={'https://www.linkedin.com/in/yarne-savaete'} target={'_blank'} className={'pl-2'}>yarne-savaete</Link>
                     </div>
                     <div className={'flex flex-row items-center mb-2'}>
                         <div className={'p-2 bg-orange-accent rounded-full w-fit'}>

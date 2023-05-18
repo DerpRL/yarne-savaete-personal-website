@@ -21,7 +21,7 @@ export const DefaultNavigation = () => {
                     <Link href={'/projects'} className={`px-4 py-2 mr-1 rounded-md hover:bg-gray-100 ${pathname.startsWith('/projects') ? `text-orange-accent` : `text-black`}`}>Projects</Link>
                     <Link href={'/blogs'} className={`px-4 py-2 rounded-md hover:bg-gray-100 ${pathname.startsWith('/blogs') ? `text-orange-accent` : `text-black`}`}>Blog</Link>
                 </div>
-                <Link href={'mailto:contact@yarnesavaete.com'} className={'hidden min-[1150px]:flex border border-2 rounded-md border-purple-accent px-5 py-2 font-bold motion-safe:hover:scale-110 hover:bg-purple-accent hover:text-white transition-all duration-300 ease-in-out'}>
+                <Link href={'mailto:contact@yarnesavaete.com'} prefetch={false} className={'hidden min-[1150px]:flex border border-2 rounded-md border-purple-accent px-5 py-2 font-bold motion-safe:hover:scale-110 hover:bg-purple-accent hover:text-white transition-all duration-300 ease-in-out'}>
                     Contact
                 </Link>
                 <div className="min-[1150px]:hidden">
@@ -72,7 +72,7 @@ export const DefaultNavigation = () => {
                                     <Link href={'/privacy-policy'} onClick={() => { close() }} className={`font-bold text-lg mb-8 ${pathname.startsWith('/privacy-policy') ? `text-gray-400 font-black` : `font-bold text-orange-accent`}`}>
                                         Privacy Policy
                                     </Link>
-                                    <Link href={'mailto:contact@yarnesavaete.com'} className={'w-full text-center rounded-md bg-purple-accent px-5 py-2 font-bold text-lg text-white'}>
+                                    <Link href={'mailto:contact@yarnesavaete.com'} prefetch={false} className={'w-full text-center rounded-md bg-purple-accent px-5 py-2 font-bold text-lg text-white'}>
                                         Contact Me
                                     </Link>
                                     <p className={'font-medium text-gray-400 text-center mx-auto mt-2'}>Copyright &copy; 2023 Yarne Savaete. All Rights Reserved.</p>
