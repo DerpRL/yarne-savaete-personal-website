@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import { GoogleAnalyticsLoader } from "@/components/GoogleAnalyticsLoader";
-import { IntroductionSection } from "@/components/resume/introductionSection";
+import { IntroductionSection } from "@/components/resume/IntroductionSection";
 import { ResumeSkillListing } from "@/components/resume/ResumeSkillListing";
 import { WorkHistoryListing } from "@/components/resume/WorkHistoryListing";
 import { EducationListing } from "@/components/resume/EducationListing";
